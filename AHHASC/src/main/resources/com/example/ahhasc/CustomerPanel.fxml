@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" stylesheets="@../../../CSS/MainApp.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ahhasc.CustomerPanelController">
+   <children>
+      <AnchorPane layoutY="26.0" prefHeight="742.0" prefWidth="216.0" styleClass="Background" stylesheets="@../../../CSS/MainApp.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="26.0">
+         <children>
+            <Text fill="WHITE" layoutX="67.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="67.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Button layoutX="-70.0" layoutY="143.0" mnemonicParsing="false" onAction="#LogoutButton" prefHeight="43.0" prefWidth="274.0" style="-fx-background-color: transparent;" text="  Log Out" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/logout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="-40.0" layoutY="200.0" mnemonicParsing="false" onAction="#AppointmentButton" prefHeight="43.0" prefWidth="244.0" style="-fx-background-color: transparent;" text="  Appointment" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/icons8-person-calendar-96%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="32.0" fitWidth="36.0" layoutX="21.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/icons8-person-at-home-96.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="21.0" layoutX="181.0" layoutY="14.0" onKeyPressed="#MenuButton" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/navbar.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="21.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="APU HOME SERVICES">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Main" layoutY="-3.0" prefHeight="33.0" prefWidth="1025.0" styleClass="Border">
+         <children>
+            <Button fx:id="closebutton" contentDisplay="GRAPHIC_ONLY" layoutX="973.0" layoutY="1.0" mnemonicParsing="false" onAction="#close" prefHeight="32.0" prefWidth="52.0" text="Button">
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/CloseIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="hoverHand" />
+                  <String fx:value="Transparent" />
+               </styleClass>
+            </Button>
+            <Button fx:id="minimizebtn" layoutX="919.0" layoutY="-1.0" mnemonicParsing="false" onAction="#minimize" prefHeight="32.0" prefWidth="52.0">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/icons8-subtract-96.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="hoverHand" />
+                  <String fx:value="Transparent" />
+               </styleClass>
+            </Button>
+            <Text fill="WHITE" layoutX="366.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="APU Hostel Home Appliances Service Centre (AHHASC)" />
+         </children>
+      </AnchorPane>
+      <StackPane fx:id="stckPane" layoutX="216.0" layoutY="30.0" prefHeight="742.0" prefWidth="809.0" />
+   </children>
+</AnchorPane>

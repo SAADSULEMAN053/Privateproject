@@ -9,6 +9,9 @@ public class User {
     private String NicNumber;
     private boolean Gender;
 
+    public User() {
+    }
+
     public User(String firstName, String lastName, String email, String password, String nicNumber, boolean gender) {
         FirstName = firstName;
         LastName = lastName;

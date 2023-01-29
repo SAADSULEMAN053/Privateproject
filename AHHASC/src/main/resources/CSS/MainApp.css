@@ -1,0 +1,52 @@
+.Background
+{
+    -fx-background-color: linear-gradient(to left, #4E126A ,#6E2A8E);
+}
+.Border
+{
+    -fx-background-color: #313131 ;
+}
+.Mytext
+{
+    -fx-background-color: #4E126A;
+}
+.Transparent
+{
+    -fx-background-color: transparent;
+}
+.hoverHand:hover
+{
+    -fx-cursor: hand;
+    -fx-background-color: rgba(255, 75, 75, 0.35);
+}
+
+#ElectricianPane
+{
+    -fx-background-image: url("CSSImages/emmanuel-ikwuegbu-_2AlIm-F6pw-unsplash.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 300.0;
+    -fx-background-position: center center;
+    -fx-background-radius: 20px;
+}
+#PlumberPane
+{
+    -fx-background-image: url("CSSImages/sigmund-4CNNH2KEjhc-unsplash.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 300.0;
+    -fx-background-position: center center;
+    -fx-background-radius: 20px;}
+
+#CleanersPane{
+    -fx-background-image: url("CSSImages/ashwini-chaudhary-monty--4KzDiyZjgw-unsplash.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 300.0;
+    -fx-background-position: center center;
+    -fx-background-radius: 20px;
+}
+
+#AirConditionerPane{
+    -fx-background-image: url("CSSImages/carlos-lindner-53wcYH4IOig-unsplash.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 300.0;
+    -fx-background-position: center center;
+    -fx-background-radius: 20px;}

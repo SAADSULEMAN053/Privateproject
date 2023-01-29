@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="742.0" prefWidth="809.0" stylesheets="@../../../CSS/MainApp.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ahhasc.MakeAnAppointmentController">
+   <children>
+      <Text fill="#4e126a" layoutX="243.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Make An Appointment">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <Text fill="#4e126a" layoutX="296.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose a Category">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#4e126a" layoutX="200.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Electrician">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#4e126a" layoutX="517.0" layoutY="409.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Plumber">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#4e126a" layoutX="492.0" layoutY="684.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Air Conditioner">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#4e126a" layoutX="206.0" layoutY="684.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cleaners">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <AnchorPane fx:id="ElectricianPane" layoutX="110.0" layoutY="201.0" onKeyPressed="#ElectricianPaneButton" prefHeight="178.0" prefWidth="271.0" style="-fx-background-color: pink;" styleClass="hoverHand" />
+      <AnchorPane fx:id="PlumberPane" layoutX="427.0" layoutY="201.0" onKeyPressed="#PlumberPaneButton" prefHeight="178.0" prefWidth="271.0" style="-fx-background-color: pink;" styleClass="hoverHand" />
+      <AnchorPane fx:id="CleanersPane" layoutX="106.0" layoutY="467.0" onKeyPressed="#CleanersPaneButton" prefHeight="178.0" prefWidth="271.0" style="-fx-background-color: pink;" styleClass="hoverHand" />
+      <AnchorPane fx:id="AirConditionerPane" layoutX="427.0" layoutY="467.0" onKeyPressed="#AirConditionerPaneButton" prefHeight="178.0" prefWidth="271.0" style="-fx-background-color: pink;" styleClass="hoverHand" />
+   </children>
+</AnchorPane>

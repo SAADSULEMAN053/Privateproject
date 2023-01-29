@@ -33,5 +33,10 @@ public class General_Functions {
         obj.stage = (Stage) b.getScene().getWindow();
         obj.stage.close();
     }
+    public void minimize(Button b)
+    {
+        obj.stage = (Stage) b.getScene().getWindow();
+        obj.stage.setIconified(true);
+    }
 
 }
