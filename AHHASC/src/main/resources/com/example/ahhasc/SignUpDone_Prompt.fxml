@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="Main"  prefHeight="600.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ahhasc.CustomerSignUp_Controller">
+   <children>
+      <AnchorPane id="l3" fx:id="child" layoutX="403.0" prefHeight="569.0" prefWidth="627.0">
+         <children>
+            <Text layoutX="79.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SIGN UP" wrappingWidth="171.0">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Text>
+            <Button id="BackToLogin" layoutX="90.0" layoutY="363.0" mnemonicParsing="false"  prefHeight="30.0" prefWidth="150.0" text="BACK TO LOGIN">
+               <padding>
+                  <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+               </padding>
+            </Button>
+            <Text layoutX="79.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Almost There !" wrappingWidth="293.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Button fx:id="close" layoutX="561.0" layoutY="14.0" minWidth="43.0" mnemonicParsing="false" onAction="#close" prefHeight="30.0" prefWidth="50.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/Images/close.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label fx:id="bankNameValidation" layoutX="330.0" layoutY="350.0" textFill="#eaf6ff">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="tilIDValidation" layoutX="330.0" layoutY="390.0" textFill="#eaf6ff">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="accountNameValidation" layoutX="330.0" layoutY="430.0" textFill="#eaf6ff">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="packageValidation" layoutX="330.0" layoutY="470.0" textFill="#eaf6ff">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+            </Label>
+            <Line endX="170.3333740234375" layoutX="180.0" layoutY="189.0" startX="-100.0" stroke="#009ffd" strokeWidth="3.0" />
+            <Text layoutX="79.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;Congratulations! You've successfully signed up for our home appliances app. Discover the latest and greatest home appliances, keep track of your purchases, and access special deals and promotions. Let's make your home smarter!&quot;" wrappingWidth="420.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <ImageView fitHeight="630.0" fitWidth="410.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/nathan-dumlao-lvWw_G8tKsk-unsplash.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
