@@ -10,16 +10,16 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="Main" onMouseDragged="#dragWindow" onMousePressed="#pressedWindow" prefHeight="600.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.semesterProject_2022.SignUp_Controller">
+<AnchorPane fx:id="Main"  prefHeight="600.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ahhasc.CustomerSignUp_Controller">
    <children>
-      <AnchorPane id="l3" fx:id="child" layoutX="403.0" prefHeight="569.0" prefWidth="627.0" stylesheets="@../../../../../../../../Studies%20Material/Semester%203/OOP%20-%20Aksam%20Iftikhar/OOP%20Semester%20Project/Semester-Project-2022/SemesterProject_2022/src/main/resources/com/example/semesterProject_2022/CSS/SignUp.css">
+      <AnchorPane id="l3" fx:id="child" layoutX="403.0" prefHeight="569.0" prefWidth="627.0">
          <children>
             <Text layoutX="79.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SIGN UP" wrappingWidth="171.0">
                <font>
                   <Font name="System Bold" size="36.0" />
                </font>
             </Text>
-            <Button id="BackToLogin" layoutX="90.0" layoutY="363.0" mnemonicParsing="false" onAction="#GoBackLogIn" prefHeight="30.0" prefWidth="150.0" text="BACK TO LOGIN">
+            <Button id="BackToLogin" layoutX="90.0" layoutY="363.0" mnemonicParsing="false"  prefHeight="30.0" prefWidth="150.0" text="BACK TO LOGIN">
                <padding>
                   <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
                </padding>
@@ -33,7 +33,7 @@
                <graphic>
                   <ImageView fitHeight="30.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../../Studies%20Material/Semester%203/OOP%20-%20Aksam%20Iftikhar/OOP%20Semester%20Project/Semester-Project-2022/SemesterProject_2022/src/main/resources/com/example/semesterProject_2022/Images/icons8-close-window-96.png" />
+                        <Image url="/Images/close.png" />
                      </image>
                   </ImageView>
                </graphic>
