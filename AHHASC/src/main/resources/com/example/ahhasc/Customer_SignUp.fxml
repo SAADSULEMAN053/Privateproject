@@ -11,14 +11,14 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="720.0" prefWidth="1024.0" style="-fx-background-color: 4E126A;" stylesheets="/CSS/MainApp.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ahhasc.CustomerSignUp_Controller">
+<AnchorPane prefHeight="720.0" prefWidth="1024.0" styleClass="Background" stylesheets="@../../../CSS/MainApp.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ahhasc.CustomerSignUp_Controller">
    <children>
       <ImageView fitHeight="720.0" fitWidth="485.0" layoutX="546.0432739257812" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <image>
             <Image url="@../../../Images/alexandra-gorn-W5dsm9n6e3g-unsplash.jpg" />
          </image>
       </ImageView>
-      <Button fx:id="close" layoutX="960.0" layoutY="5.0" mnemonicParsing="false" onAction="#close" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: transpearent;">
+      <Button fx:id="close" layoutX="960.0" layoutY="5.0" mnemonicParsing="false" onAction="#close" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: transparent;">
          <graphic>
             <ImageView fitHeight="50.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -27,7 +27,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Text layoutX="45.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SIGNUP">
+      <Text fill="WHITE" layoutX="45.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SIGNUP">
          <font>
             <Font name="System Bold" size="22.0" />
          </font>
@@ -38,38 +38,38 @@
       <TextField fx:id="phoneNoField" layoutX="280.0" layoutY="260.0" onMouseClicked="#clear" prefHeight="33.0" prefWidth="200.0" style="-fx-background-radius: 12px;" />
       <TextField fx:id="passwordField" layoutX="45.0" layoutY="440.0" onMouseClicked="#clear" prefHeight="33.0" prefWidth="200.0" style="-fx-background-radius: 12px;" />
       <TextField fx:id="emailField" layoutX="45.0" layoutY="350.0" onMouseClicked="#clear" prefHeight="33.0" prefWidth="290.0" style="-fx-background-radius: 12px;" />
-      <Label layoutX="50.0" layoutY="150.0" text="FIRSTNAME">
+      <Label layoutX="50.0" layoutY="150.0" text="FIRSTNAME" textFill="WHITE">
          <font>
             <Font name="System Italic" size="13.0" />
          </font>
       </Label>
-      <Label layoutX="50.0" layoutY="240.0" text="NIC. #">
+      <Label layoutX="50.0" layoutY="240.0" text="NIC. #" textFill="WHITE">
          <font>
             <Font name="System Italic" size="13.0" />
          </font></Label>
-      <Label layoutX="50.0" layoutY="330.0" text="EMAIL">
+      <Label layoutX="50.0" layoutY="330.0" text="EMAIL" textFill="WHITE">
          <font>
             <Font name="System Italic" size="13.0" />
          </font></Label>
-      <Label layoutX="50.0" layoutY="420.0" text="PASSWORD">
+      <Label layoutX="50.0" layoutY="420.0" text="PASSWORD" textFill="WHITE">
          <font>
             <Font name="System Italic" size="13.0" />
          </font></Label>
-      <Label layoutX="285.0" layoutY="150.0" text="LASTNAME" />
-      <Label layoutX="285.0" layoutY="240.0" text="PHONE #">
+      <Label layoutX="285.0" layoutY="150.0" text="LASTNAME" textFill="WHITE" />
+      <Label layoutX="285.0" layoutY="240.0" text="PHONE #" textFill="WHITE">
          <font>
             <Font name="System Italic" size="13.0" />
          </font></Label>
-      <Label layoutX="285.0" layoutY="420.0" text="GENDER">
+      <Label layoutX="285.0" layoutY="420.0" text="GENDER" textFill="WHITE">
          <font>
             <Font name="System Italic" size="13.0" />
          </font></Label>
-      <RadioButton fx:id="maleField" layoutX="281.0" layoutY="449.0" mnemonicParsing="false" onMouseClicked="#clear" text="MALE">
+      <RadioButton fx:id="maleField" layoutX="281.0" layoutY="449.0" mnemonicParsing="false" onMouseClicked="#clear" text="MALE" textFill="WHITE">
          <toggleGroup>
             <ToggleGroup fx:id="g1" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton fx:id="FemaleField" layoutX="361.0" layoutY="449.0" mnemonicParsing="false" onMouseClicked="#clear" text="FEMALE" toggleGroup="$g1" />
+      <RadioButton fx:id="FemaleField" layoutX="361.0" layoutY="449.0" mnemonicParsing="false" onMouseClicked="#clear" text="FEMALE" textFill="WHITE" toggleGroup="$g1" />
       <Button fx:id="signUpCompleteButton" layoutX="45.0" layoutY="520.0" mnemonicParsing="false" onAction="#doneSignUp" prefHeight="30.0" prefWidth="120.0" style="-fx-background-radius: 12px;" text="Done" />
       <Label fx:id="fNameValidation" layoutX="220.0" layoutY="509.0" />
       <Label fx:id="lNameValidation" layoutX="220.0" layoutY="534.0" />

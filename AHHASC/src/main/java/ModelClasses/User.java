@@ -7,12 +7,12 @@ public class User {
     private String Email;
     private String Password;
     private String NicNumber;
-    private boolean Gender;
-
+    private String Gender;
+    private String PhoneNo;
     public User() {
     }
 
-    public User(String firstName, String lastName, String email, String password, String nicNumber, boolean gender) {
+    public User(String firstName, String lastName, String email, String password, String nicNumber, String gender) {
         FirstName = firstName;
         LastName = lastName;
         Email = email;
@@ -61,12 +61,20 @@ public class User {
         NicNumber = nicNumber;
     }
 
-    public boolean isGender() {
+    public String isGender() {
         return Gender;
     }
 
-    public void setGender(boolean gender) {
+    public void setGender(String gender) {
         Gender = gender;
+    }
+
+    public String getPhoneNo() {
+        return PhoneNo;
+    }
+
+    public void setPhoneNo(String phoneNo) {
+        PhoneNo = phoneNo;
     }
 
     @Override

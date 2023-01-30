@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="768.0" prefWidth="1024.0" stylesheets="@../../../CSS/MainApp.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ahhasc.CustomerPanelController">
+<AnchorPane fx:id="Main" onMouseDragged="#dragWindow" onMousePressed="#pressedWindow" prefHeight="768.0" prefWidth="1024.0" stylesheets="@../../../CSS/MainApp.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ahhasc.CustomerPanelController">
    <children>
       <AnchorPane layoutY="26.0" prefHeight="742.0" prefWidth="216.0" styleClass="Background" stylesheets="@../../../CSS/MainApp.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="26.0">
          <children>
@@ -18,7 +18,7 @@
                   <Font name="System Bold" size="16.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutX="67.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name">
+            <Text fx:id="UserName" fill="WHITE" layoutX="67.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name">
                <font>
                   <Font size="14.0" />
                </font>
@@ -64,7 +64,7 @@
             </Text>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="Main" layoutY="-3.0" prefHeight="33.0" prefWidth="1025.0" styleClass="Border">
+      <AnchorPane layoutY="-3.0" prefHeight="33.0" prefWidth="1025.0" styleClass="Border">
          <children>
             <Button fx:id="closebutton" contentDisplay="GRAPHIC_ONLY" layoutX="973.0" layoutY="1.0" mnemonicParsing="false" onAction="#close" prefHeight="32.0" prefWidth="52.0" text="Button">
                <graphic>

@@ -2,6 +2,7 @@ package com.example.ahhasc;
 
 import Database.DatabaseFunctions;
 import ModelClasses.Customer;
+import ModelClasses.Technician;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -19,10 +20,10 @@ import java.util.ArrayList;
 import java.util.ResourceBundle;
 import java.util.Scanner;
 
-public class CustomerSignUp_Controller implements Initializable {
+public class TechnicianSignUpController implements Initializable {
     Stage stage;
     Scene scene;
-    private ArrayList<Customer> customers ;
+    private ArrayList<Technician> customers ;
 
 
 
@@ -32,7 +33,7 @@ public class CustomerSignUp_Controller implements Initializable {
     String alphabetRegex = "^[a-zA-Z ]*$";
     String numericRegex = "^[0-9]*$";
 
-    Customer customer ;
+Technician technician;
     @FXML
     private RadioButton FemaleField;
 
@@ -99,7 +100,7 @@ public class CustomerSignUp_Controller implements Initializable {
     private static String gender;
     private static String nic;
 
-    public CustomerSignUp_Controller() throws FileNotFoundException {
+    public TechnicianSignUpController() throws FileNotFoundException {
 
     }
 
@@ -187,22 +188,21 @@ public class CustomerSignUp_Controller implements Initializable {
         }
         else if (fNameValidation.getText().isBlank() && lNameValidation.getText().equals("") && phoneNoValidation.getText().equals("") && emailValidation.getText().equals("") && passValidation.getText().equals("") && nicValidation.getText().equals("") && genderValidation.getText().equals("")){
 
-
-            customer.setEmail(emailField.getText());
-            if(maleField.isSelected())
+            fName=firstnameField.getText();
+            lName=lastnameField.getText();
+            phoneNo=phoneNoField.getText();
+            password=passwordField.getText();
+            email=emailField.getText();
+            nic=nicField.getText();
+            if(FemaleField.isSelected())
             {
-                customer.setGender("Male");
-            } else
+                technician.setGender("female");
+            }else
             {
-                customer.setGender("Female");
+                technician.setGender("Male");
             }
-            customer.setPassword(passwordField.getText().toString());
-            customer.setFirstName(firstnameField.getText().toString());
-            customer.setLastName(lastnameField.getText().toString());
-            customer.setNicNumber(nicField.getText());
-            customer.setPhoneNo(phoneNoField.getText().toString());
 
-            DatabaseFunctions.saveToDb(customer);
+            DatabaseFunctions.saveToDb(technician);
 
             new General_Functions().switchScene(e,"InitialForm.fxml");
         }
@@ -236,7 +236,28 @@ public class CustomerSignUp_Controller implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        customer = new Customer();
+        technician = new Technician();
 
     }
+
+    @FXML
+    void Acbtn(ActionEvent event) {
+        technician.setDesignation("AC REPAIRER");
+    }
+
+    @FXML
+    void Cleanerbtn(ActionEvent event) {
+        technician.setDesignation("Cleaner");
+    }
+
+    @FXML
+    void ElectricianBtn(ActionEvent event) {
+        technician.setDesignation("Electrician");
+    }
+
+    @FXML
+    void PlumberBtn(ActionEvent event) {
+        technician.setDesignation("Plumber");
+    }
+
 }

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane fx:id="Main" onMouseDragged="#dragWindow" onMousePressed="#pressedWindow" prefHeight="397.0" prefWidth="278.0" styleClass="Background" stylesheets="@../../../CSS/MainApp.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ahhasc.InitialFormController">
+   <children>
+      <Text fill="WHITE" layoutX="97.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign Up as:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <MenuButton fx:id="SignUpButton" layoutX="87.0" layoutY="141.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="97.0" styleClass="Mybutton" text="Choose">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#TechnicianSignUpBtn" text="Technician" />
+          <MenuItem mnemonicParsing="false" onAction="#CustomerSignUpBtn" text="Customer" />
+        </items>
+      </MenuButton>
+      <Text fill="WHITE" layoutX="123.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OR">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="101.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log In as:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="23.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to APU HOME SERVICE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <MenuButton fx:id="LogInButton" layoutX="87.0" layoutY="286.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="97.0" styleClass="Mybutton" text="Choose">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#CustomerLogInBtn" text="Customer" />
+            <MenuItem mnemonicParsing="false" onAction="#TechnicianLogInBtn" text="Technician" />
+            <MenuItem mnemonicParsing="false" onAction="#ManageLogInBtn" text="Manager" />
+         </items>
+      </MenuButton>
+      <Button fx:id="Closebtn" contentDisplay="GRAPHIC_ONLY" layoutX="229.0" layoutY="9.0" mnemonicParsing="false" onAction="#closeBtn" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fx:id="close" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/CloseIcon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

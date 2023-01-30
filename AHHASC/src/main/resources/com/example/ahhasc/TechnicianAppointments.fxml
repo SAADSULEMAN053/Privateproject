@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="742.0" prefWidth="809.0" stylesheets="@../../../CSS/MainApp.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ahhasc.TechnicianAppointmentsController">
+   <children>
+      <Text fill="#4e126a" layoutX="209.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Appointments">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <Line endX="92.14137268066406" layoutX="332.0" layoutY="151.0" scaleX="5.0" startX="-100.0" stroke="#4e126a" />
+      <Text layoutX="87.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="01." />
+      <Text layoutX="87.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="02" />
+      <Text layoutX="87.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="03" />
+      <Text fx:id="CustomerName1" layoutX="148.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Name" />
+      <Text fx:id="CustomerName2" layoutX="148.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Name" />
+      <Text fx:id="CustomerName3" layoutX="147.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Name" />
+      <Text layoutX="89.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sr.">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="143.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="319.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone No.">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="472.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Job Status">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="610.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <MenuButton layoutX="596.0" layoutY="215.0" mnemonicParsing="false" styleClass="MyCutomButton2" text="Not Done" textFill="WHITE">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#paid1" text="Paid" />
+          <MenuItem mnemonicParsing="false" onAction="#notpaid1" text="Not Paid" />
+        </items>
+      </MenuButton>
+      <MenuButton layoutX="596.0" layoutY="258.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" styleClass="MyCutomButton2" text="Paid" textFill="WHITE">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#paid2" text="Paid" />
+            <MenuItem mnemonicParsing="false" onAction="#notpaid2" text="Not Paid" />
+         </items>
+      </MenuButton>
+      <MenuButton layoutX="597.0" layoutY="306.0" mnemonicParsing="false" styleClass="MyCutomButton2" text="Not Paid" textFill="WHITE">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#paid3" text="Paid" />
+            <MenuItem mnemonicParsing="false" onAction="#notpaid3" text="Not Paid" />
+         </items>
+      </MenuButton>
+      <Text fx:id="Ph1" layoutX="310.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0300-xxxxxxxx" />
+      <Text fx:id="Ph2" layoutX="310.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0300-xxxxxxxx" />
+      <Text fx:id="Ph3" layoutX="309.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0300-xxxxxxxx" />
+      <Text fx:id="status1" layoutX="469.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Not Done" />
+      <Text fx:id="status2" layoutX="469.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Not Done" />
+      <Text fx:id="status3" layoutX="469.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Not Done" />
+   </children>
+</AnchorPane>

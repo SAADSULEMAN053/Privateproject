@@ -16,27 +16,25 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class CustomerPanelController implements Initializable {
+public class TechnicianPanelController implements Initializable {
+    CustomerSignUp_Controller obj = new CustomerSignUp_Controller();
+    double x= 0 , y = 0 ;
+    @FXML
+    private AnchorPane Main;
 
     @FXML
     private Text UserName;
-        double x=0,y =0;
-    CustomerSignUp_Controller obj = new CustomerSignUp_Controller();
-    @FXML
-    private AnchorPane Main;
+
     @FXML
     private Button closebutton;
+
     @FXML
     private Button minimizebtn;
+
     @FXML
     private StackPane stckPane;
 
-
-    public static String Id = "1";
-    public static String name = "Saad";
-
-
-    public CustomerPanelController() throws FileNotFoundException {
+    public TechnicianPanelController() throws FileNotFoundException {
     }
 
     @FXML
@@ -46,7 +44,7 @@ public class CustomerPanelController implements Initializable {
 
     @FXML
     void LogoutButton(ActionEvent event) throws IOException {
-        new General_Functions().switchScene(event, "LogInForm.fxml");
+        new General_Functions().switchScene(event,"LogInForm.fxml");
     }
 
     @FXML
@@ -60,30 +58,29 @@ public class CustomerPanelController implements Initializable {
     }
 
     @FXML
-    void minimize(ActionEvent event) throws FileNotFoundException {
-        new General_Functions().minimize(minimizebtn);
-    }
-
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-
-            Changefxml MakeAnAppointment = new Changefxml();
-            MakeAnAppointment.getfxml("MakeAnAppointment.fxml");
-            UserName.setText(name);
-            stckPane.getChildren().add(MakeAnAppointment.pane);
-
-    }
-
-    public void dragWindow(MouseEvent e)
-    {
+    void dragWindow(MouseEvent e) {
         obj.stage = (Stage) Main.getScene().getWindow();
         obj.stage.setX(e.getScreenX()-x);
         obj.stage.setY(e.getScreenY()-y);
     }
+
     @FXML
-    public void pressedWindow(MouseEvent e)
-    {
+    void minimize(ActionEvent event) throws FileNotFoundException {
+         new General_Functions().minimize(minimizebtn);
+    }
+
+    @FXML
+    void pressedWindow(MouseEvent e) {
         x = e.getSceneX();
         y= e.getSceneY();
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        Changefxml technicianappointment = new Changefxml();
+        technicianappointment.getfxml("TechnicianAppointments.fxml");
+
+        stckPane.getChildren().add(technicianappointment.pane);
+
     }
 }

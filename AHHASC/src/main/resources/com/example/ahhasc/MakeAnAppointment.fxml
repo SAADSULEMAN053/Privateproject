@@ -36,9 +36,9 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Text>
-      <AnchorPane fx:id="ElectricianPane" layoutX="110.0" layoutY="201.0" onKeyPressed="#ElectricianPaneButton" prefHeight="178.0" prefWidth="271.0" style="-fx-background-color: pink;" styleClass="hoverHand" />
-      <AnchorPane fx:id="PlumberPane" layoutX="427.0" layoutY="201.0" onKeyPressed="#PlumberPaneButton" prefHeight="178.0" prefWidth="271.0" style="-fx-background-color: pink;" styleClass="hoverHand" />
-      <AnchorPane fx:id="CleanersPane" layoutX="106.0" layoutY="467.0" onKeyPressed="#CleanersPaneButton" prefHeight="178.0" prefWidth="271.0" style="-fx-background-color: pink;" styleClass="hoverHand" />
-      <AnchorPane fx:id="AirConditionerPane" layoutX="427.0" layoutY="467.0" onKeyPressed="#AirConditionerPaneButton" prefHeight="178.0" prefWidth="271.0" style="-fx-background-color: pink;" styleClass="hoverHand" />
+      <AnchorPane fx:id="ElectricianPane" layoutX="110.0" layoutY="201.0" onMousePressed="#ElectricianPaneButton" prefHeight="178.0" prefWidth="271.0" style="-fx-background-color: pink;" styleClass="hoverHand" />
+      <AnchorPane fx:id="PlumberPane" layoutX="427.0" layoutY="201.0" onMousePressed="#PlumberPaneButton" prefHeight="178.0" prefWidth="271.0" style="-fx-background-color: pink;" styleClass="hoverHand" />
+      <AnchorPane fx:id="CleanersPane" layoutX="106.0" layoutY="467.0" onMousePressed="#CleanersPaneButton" prefHeight="178.0" prefWidth="271.0" style="-fx-background-color: pink;" styleClass="hoverHand" />
+      <AnchorPane fx:id="AirConditionerPane" layoutX="427.0" layoutY="467.0" onMousePressed="#AirConditionerPaneButton" prefHeight="178.0" prefWidth="271.0" style="-fx-background-color: pink;" styleClass="hoverHand" />
    </children>
 </AnchorPane>

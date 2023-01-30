@@ -1,3 +1,6 @@
+
+
+
 .Background
 {
     -fx-background-color: linear-gradient(to left, #4E126A ,#6E2A8E);
@@ -19,7 +22,10 @@
     -fx-cursor: hand;
     -fx-background-color: rgba(255, 75, 75, 0.35);
 }
-
+#LoginBtn
+{
+    -fx-cursor: hand;
+}
 #ElectricianPane
 {
     -fx-background-image: url("CSSImages/emmanuel-ikwuegbu-_2AlIm-F6pw-unsplash.jpg");
@@ -50,3 +56,40 @@
     -fx-background-size: 300.0;
     -fx-background-position: center center;
     -fx-background-radius: 20px;}
+
+.background{
+    -fx-background-color: linear-gradient(to left, #4E126A,#6E2A8E);
+}
+
+.Mybutton{
+    -fx-background-color: white;
+    -fx-background-radius: 20px;
+}
+.MyCutomButton2
+{
+    -fx-background-color: #4E126A;
+    -fx-background-radius: 20px;
+
+}
+
+.InputFieldCustom
+{
+    -fx-background-radius: 20px;
+    -fx-border-width: 1px;
+    -fx-border-radius: 20px;
+    -fx-border-color: purple;
+}
+.InputFieldCustom:selected
+{
+    -fx-background-radius: 20px;
+    -fx-border-width: 3px;
+    -fx-border-radius: 20px;
+    -fx-border-color: purple;
+}
+.InputFieldCustom:hover
+{
+    -fx-background-radius: 20px;
+    -fx-border-width: 3px;
+    -fx-border-radius: 20px;
+    -fx-border-color: purple;
+}
